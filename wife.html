@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PoeticBlueDesigns & TheBasketEdit8 — Two Brands. One Promise.</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/playfair-display@5.1.0/index.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@5.1.0/index.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.0/index.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<style>
+  :root {
+    --royal-blue: #0A2E6D;
+    --blush-pink: #D9909F;
+    --gold: #C9A961;
+    --rose-gold: #B76E79;
+    --beige: #F5EFE6;
+    --cream: #FBF8F3;
+  }
+  * { -webkit-font-smoothing: antialiased; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background: var(--cream); color: #1a1a1a; transition: background 0.4s, color 0.4s; }
+  body.dark { background: #0d1117; color: #e6e6e6; }
+  .font-display { font-family: 'Playfair Display', serif; }
+  .font-serif-elegant { font-family: 'Cormorant Garamond', serif; }
+  .font-body { font-family: 'Inter', sans-serif; }
+
+  /* Islamic Arch */
+  .islamic-arch {
+    border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  }
+  .islamic-arch-full {
+    border-radius: 50% 50% 8% 8% / 40% 40% 5% 5%;
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+  @keyframes pulse-gold {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(201, 169, 97, 0.4); }
+    50% { box-shadow: 0 0 0 15px rgba(201, 169, 97, 0); }
+  }
+  .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
+  .animate-fadeIn { animation: fadeIn 1s ease-out forwards; }
+  .animate-slideInLeft { animation: slideInLeft 0.8s ease-out forwards; }
+  .animate-slideInRight { animation: slideInRight 0.8s ease-out forwards; }
+  .animate-float { animation: float 3s ease-in-out infinite; }
+  .animate-pulse-gold { animation: pulse-gold 2s infinite; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--cream); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 5px; }
+  body.dark ::-webkit-scrollbar-track { background: #1a1f2e; }
+
+  /* Page transitions */
+  .page { display: none; animation: fadeIn 0.5s ease-out; }
+  .page.active { display: block; }
+
+  /* Hover effects */
+  .hover-lift { transition: transform 0.4s, box-shadow 0.4s; }
+  .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(10, 46, 109, 0.15); }
+  body.dark .hover-lift:hover { box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+
+  .hover-scale { transition: transform 0.4s; }
+  .hover-scale:hover { transform: scale(1.05); }
+
+  /* Product card */
+  .product-card { position: relative; overflow: hidden; background: white; border-radius: 16px; transition: all 0.4s; }
+  body.dark .product-card { background: #1a1f2e; }
+  .product-card:hover { transform: translateY(-6px); }
+  .product-card img { transition: transform 0.6s; }
+  .product-card:hover img { transform: scale(1.1); }
+
+  /* Buttons */
+  .btn-royal {
+    background: linear-gradient(135deg, #0A2E6D, #1a4a9e);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(10, 46, 109, 0.3);
+  }
+  .btn-royal:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(10, 46, 109, 0.5); }
+  .btn-blush {
+    background: linear-gradient(135deg, #D9909F, #B76E79);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(217, 144, 159, 0.4);
+  }
+  .btn-blush:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(217, 144, 159, 0.6); }
+  .btn-gold {
+    background: linear-gradient(135deg, #C9A961, #a8883f);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(201, 169, 97, 0.5); }
+
+  /* Nav */
+  .nav-link { position: relative; padding: 8px 4px; transition: color 0.3s; }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    width: 0; height: 2px;
+    background: var(--gold);
+    transition: all 0.3s;
+    transform: translateX(-50%);
+  }
+  .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+
+  /* Category card */
+  .category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .category-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    z-index: 1;
+  }
+  .category-card img { transition: transform 0.6s; }
+  .category-card:hover img { transform: scale(1.1); }
+
+  /* WhatsApp float */
+  .whatsapp-float {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    width: 60px; height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: white; font-size: 28px;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+    z-index: 100;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  .whatsapp-float:hover { transform: scale(1.1); }
+
+  /* Hero split */
+  .hero-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  }
+  @media (max-width: 768px) {
+    .hero-split { grid-template-columns: 1fr; }
+  }
+
+  /* Modal */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(8px);
+    z-index: 200;
+    display: none;
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.active { display: flex; }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    top: 30px; right: 30px;
+    background: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    z-index: 300;
+    transform: translateX(400px);
+    transition: transform 0.4s;
+    border-left: 4px solid var(--gold);
+  }
+  body.dark .toast { background: #1a1f2e; }
+  .toast.show { transform: translateX(0); }
+
+  /* Rating stars */
+  .star { color: #C9A961; }
+  .star.empty { color: #ddd; }
+
+  /* Arch decorative */
+  .arch-deco {
+    position: relative;
+  }
+  .arch-deco::before {
+    content: '';
+    position: absolute;
+    top: -20px; left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 40px;
+    border: 2px solid var(--gold);
+    border-bottom: none;
+    border-radius: 50% 50% 0 0;
+    opacity: 0.5;
+  }
+
+  /* Input */
+  .input-elegant {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: white;
+    transition: all 0.3s;
+    font-family: 'Inter', sans-serif;
+  }
+  body.dark .input-elegant {
+    background: #1a1f2e;
+    border-color: #2a3040;
+    color: white;
+  }
+  .input-elegant:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(201, 169, 97, 0.2);
+  }
+
+  /* Custom scrollbar for horizontal */
+  .scroll-x { overflow-x: auto; scrollbar-width: thin; }
+  .scroll-x::-webkit-scrollbar { height: 6px; }
+  .scroll-x::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+  /* RTL support for Urdu */
+  body[dir="rtl"] { direction: rtl; }
+
+  /* Cart badge */
+  .cart-badge {
+    position: absolute;
+    top: -8px; right: -8px;
+    background: var(--blush-pink);
+    color: white;
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: bold;
+  }
+
+  /* Loader */
+  .loader {
+    width: 40px; height: 40px;
+    border: 3px solid rgba(201, 169, 97, 0.3);
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Gradient text */
+  .gradient-text-gold {
+    background: linear-gradient(135deg, #C9A961, #E8D48B, #C9A961);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Divider */
+  .gold-divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 20px 0;
+  }
+
+  /* Filter chip */
+  .filter-chip {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 13px;
+  }
+  body.dark .filter-chip { background: #1a1f2e; border-color: #2a3040; color: white; }
+  .filter-chip.active {
+    background: var(--royal-blue);
+    color: white;
+    border-color: var(--royal-blue);
+  }
+  .filter-chip.pink.active {
+    background: var(--blush-pink);
+    border-color: var(--blush-pink);
+  }
+
+  /* Mobile nav */
+  .mobile-menu {
+    position: fixed;
+    top: 0; right: -100%;
+    width: 85%;
+    max-width: 400px;
+    height: 100vh;
+    background: white;
+    z-index: 150;
+    transition: right 0.4s;
+    overflow-y: auto;
+    padding: 30px;
+  }
+  body.dark .mobile-menu { background: #0d1117; }
+  .mobile-menu.open { right: 0; }
+
+  /* Image gallery */
+  .gallery-thumb {
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  .gallery-thumb.active { border-color: var(--gold); }
+  .gallery-thumb:hover { border-color: var(--gold); }
+
+  /* Quantity */
+  .qty-btn {
+    width: 32px; height: 32px;
+    border: 1px solid #e5e7eb;
+    background: white;
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  body.dark .qty-btn { background: #1a1f2e; border-color: #2a3040; color: white; }
+  .qty-btn:hover { background: var(--gold); color: white; border-color: var(--gold); }
+</style>
+</head>
+<body>
+
+<!-- Toast -->
+<div id="toast" class="toast">
+  <div class="flex items-center gap-3">
+    <i class="fas fa-check-circle text-green-500 text-xl"></i>
+    <span id="toastMsg">Added to cart!</span>
+  </div>
+</div>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/923046124608" target="_blank" class="whatsapp-float animate-pulse-gold">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Navigation -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <div class="flex items-center gap-2 cursor-pointer" onclick="navigate('home')">
+        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#0A2E6D] to-[#D9909F] flex items-center justify-center">
+          <i class="fas fa-gem text-white text-lg"></i>
+        </div>
+        <div class="hidden sm:block">
+          <div class="font-display font-bold text-sm leading-tight">PoeticBlue</div>
+          <div class="font-display font-bold text-sm leading-tight text-[#D9909F]">& BasketEdit</div>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a onclick="navigate('home')" class="nav-link cursor-pointer font-medium">Home</a>
+        <a onclick="navigate('shop')" class="nav-link cursor-pointer font-medium">Shop</a>
+        <a onclick="navigate('categories')" class="nav-link cursor-pointer font-medium">Categories</a>
+        <a onclick="navigate('about')" class="nav-link cursor-pointer font-medium">About Us</a>
+        <a onclick="navigate('blog')" class="nav-link cursor-pointer font-medium">Blog</a>
+        <a onclick="navigate('contact')" class="nav-link cursor-pointer font-medium">Contact</a>
+      </div>
+
+      <!-- Right Icons -->
+      <div class="flex items-center gap-3">
+        <button onclick="toggleSearch()" class="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition">
+          <i class="fas fa-search"></i>
+        </button>
+        <button onclick="toggleLang()" class="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition font-bold text-sm">
+          <span id="langLabel">EN</span>
+        </button>
+        <button onclick="toggleDark()" class="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition">
+          <i id="themeIcon" class="fas fa-moon"></i>
+        </button>
+        <button onclick="navigate('account')" class="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition hidden sm:flex">
+          <i class="fas fa-user"></i>
+        </button>
+        <button onclick="navigate('cart')" class="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition relative">
+          <i class="fas fa-shopping-bag"></i>
+          <span id="cartCount" class="cart-badge">0</span>
+        </button>
+        <button onclick="toggleMobileMenu()" class="lg:hidden w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div id="searchBar" class="hidden border-t border-gray-100 bg-white">
+    <div class="max-w-3xl mx-auto px-6 py-4">
+      <div class="relative">
+        <input type="text" id="searchInput" placeholder="Search products..." class="input-elegant pl-12" oninput="handleSearch(this.value)" />
+        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      </div>
+      <div id="searchResults" class="mt-4 max-h-80 overflow-y-auto"></div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="mobile-menu">
+  <div class="flex justify-between items-center mb-8">
+    <div class="font-display font-bold text-xl">Menu</div>
+    <button onclick="toggleMobileMenu()" class="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center">
+      <i class="fas fa-times text-xl"></i>
+    </button>
+  </div>
+  <div class="flex flex-col gap-4">
+    <a onclick="navigate('home'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">Home</a>
+    <a onclick="navigate('shop'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">Shop</a>
+    <a onclick="navigate('categories'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">Categories</a>
+    <a onclick="navigate('about'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">About Us</a>
+    <a onclick="navigate('blog'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">Blog</a>
+    <a onclick="navigate('contact'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">Contact</a>
+    <a onclick="navigate('account'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium">My Account</a>
+    <a onclick="navigate('admin'); toggleMobileMenu()" class="py-3 border-b border-gray-100 cursor-pointer font-medium text-[#0A2E6D]">Admin Dashboard</a>
+  </div>
+</div>
+
+<!-- ==================== HOME PAGE ==================== -->
+<div id="page-home" class="page active">
+  <!-- Hero Split -->
+  <section class="hero-split pt-20">
+    <!-- Left: PoeticBlueDesigns -->
+    <div class="relative bg-gradient-to-br from-[#0A2E6D] to-[#1a4a9e] overflow-hidden flex items-center justify-center p-8 min-h-[60vh]">
+      <div class="absolute inset-0 opacity-20">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+          <pattern id="pattern1" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="20" cy="20" r="2" fill="white" />
+            <path d="M0 20 Q10 10 20 20 Q10 30 0 20" fill="none" stroke="white" stroke-width="0.5" />
+          </pattern>
+          <rect width="200" height="200" fill="url(#pattern1)" />
+        </svg>
+      </div>
+      <div class="relative z-10 text-center text-white max-w-md animate-slideInLeft">
+        <div class="islamic-arch-full mx-auto w-64 h-64 mb-6 overflow-hidden shadow-2xl">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png" class="w-full h-full object-cover" alt="Blue Pottery" />
+        </div>
+        <div class="text-xs tracking-[0.3em] text-[#C9A961] mb-2">POETICBLUEDESIGNS</div>
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-3">Beauty. Tradition. Poetry.</h1>
+        <p class="font-serif-elegant text-lg md:text-xl mb-6 opacity-90">Handcrafted Heritage, Timeless Elegance.</p>
+        <button onclick="navigate('shop', 'poeticblue')" class="btn-gold">
+          Shop PoeticBlueDesigns <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right: TheBasketEdit8 -->
+    <div class="relative bg-gradient-to-br from-[#D9909F] to-[#B76E79] overflow-hidden flex items-center justify-center p-8 min-h-[60vh]">
+      <div class="absolute inset-0 opacity-20">
+        <svg viewBox="0 0 200 200" class="w-full h-full">
+          <pattern id="pattern2" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M20 0 Q30 20 20 40 Q10 20 20 0" fill="none" stroke="white" stroke-width="0.5" />
+          </pattern>
+          <rect width="200" height="200" fill="url(#pattern2)" />
+        </svg>
+      </div>
+      <div class="relative z-10 text-center text-white max-w-md animate-slideInRight">
+        <div class="islamic-arch-full mx-auto w-64 h-64 mb-6 overflow-hidden shadow-2xl">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/10eca117c-6dc3-4092-8c56-e36a66489048.png" class="w-full h-full object-cover" alt="Gift Basket" />
+        </div>
+        <div class="text-xs tracking-[0.3em] text-[#C9A961] mb-2">THEBASKETEDIT8</div>
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-3">Thoughtful Baskets, Made to Delight.</h1>
+        <p class="font-serif-elegant text-lg md:text-xl mb-6 opacity-90">Custom Gifts for Every Celebration.</p>
+        <button onclick="navigate('shop', 'basketedit')" class="btn-gold">
+          Shop TheBasketEdit8 <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Center Motto -->
+  <section class="bg-gradient-to-r from-[#0A2E6D] via-[#1a1a1a] to-[#D9909F] py-16 text-center text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <svg viewBox="0 0 400 100" class="w-full h-full">
+        <path d="M0 50 Q100 0 200 50 Q300 100 400 50" fill="none" stroke="white" stroke-width="1" />
+      </svg>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto px-6">
+      <div class="text-[#C9A961] text-sm tracking-[0.4em] mb-4">✦ OUR PROMISE ✦</div>
+      <h2 class="font-display text-4xl md:text-6xl font-bold mb-6">Two Brands. One Promise.</h2>
+      <p class="font-serif-elegant text-xl md:text-2xl mb-8 opacity-90">Handmade with Love • Premium Quality • Delivering Happiness</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <button onclick="navigate('shop', 'poeticblue')" class="btn-royal">
+          <i class="fas fa-shopping-bag mr-2"></i> Shop PoeticBlueDesigns
+        </button>
+        <button onclick="navigate('shop', 'basketedit')" class="btn-blush">
+          <i class="fas fa-gift mr-2"></i> Shop TheBasketEdit8
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">OUR COLLECTIONS</div>
+      <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Explore Our Categories</h2>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Blue Pottery -->
+      <div class="category-card h-80 hover-lift" onclick="navigate('shop', 'blue-pottery')">
+        <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png" class="w-full h-full object-cover" />
+        <div class="absolute bottom-0 left-0 right-0 p-6 z-10 text-white">
+          <div class="text-xs tracking-widest mb-1 text-[#C9A961]">POETICBLUEDESIGNS</div>
+          <h3 class="font-display text-2xl font-bold mb-2">Blue Pottery</h3>
+          <div class="flex items-center gap-2 text-sm">
+            <span>Explore</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camel Skin Lamps -->
+      <div class="category-card h-80 hover-lift" onclick="navigate('shop', 'camel-lamps')">
+        <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1e9215eeb-cc46-4bd7-b147-f91793fd6447.png" class="w-full h-full object-cover" />
+        <div class="absolute bottom-0 left-0 right-0 p-6 z-10 text-white">
+          <div class="text-xs tracking-widest mb-1 text-[#C9A961]">POETICBLUEDESIGNS</div>
+          <h3 class="font-display text-2xl font-bold mb-2">Camel Skin Lamps</h3>
+          <div class="flex items-center gap-2 text-sm">
+            <span>Explore</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Baskets -->
+      <div class="category-card h-80 hover-lift" onclick="navigate('shop', 'custom-baskets')">
+        <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/10eca117c-6dc3-4092-8c56-e36a66489048.png" class="w-full h-full object-cover" />
+        <div class="absolute bottom-0 left-0 right-0 p-6 z-10 text-white">
+          <div class="text-xs tracking-widest mb-1 text-[#C9A961]">THEBASKETEDIT8</div>
+          <h3 class="font-display text-2xl font-bold mb-2">Custom Baskets</h3>
+          <div class="flex items-center gap-2 text-sm">
+            <span>Explore</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wedding Baskets -->
+      <div class="category-card h-80 hover-lift" onclick="navigate('shop', 'wedding-baskets')">
+        <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/14bf590c9-4559-4502-9955-0fe644de7662.png" class="w-full h-full object-cover" />
+        <div class="absolute bottom-0 left-0 right-0 p-6 z-10 text-white">
+          <div class="text-xs tracking-widest mb-1 text-[#C9A961]">THEBASKETEDIT8</div>
+          <h3 class="font-display text-2xl font-bold mb-2">Wedding Baskets</h3>
+          <div class="flex items-center gap-2 text-sm">
+            <span>Explore</span>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">BESTSELLERS</div>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Featured Products</h2>
+        <div class="gold-divider w-32 mx-auto"></div>
+      </div>
+      <div id="featuredProducts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Brand Stories -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="bg-gradient-to-br from-[#0A2E6D] to-[#1a4a9e] rounded-3xl p-10 text-white hover-lift">
+        <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-4">OUR STORY</div>
+        <h3 class="font-display text-3xl font-bold mb-4">PoeticBlueDesigns</h3>
+        <p class="font-serif-elegant text-lg mb-6 opacity-90">We preserve traditional craftsmanship through handcrafted blue pottery, camel skin lamps, and timeless decorative pieces that celebrate culture and artistry.</p>
+        <button onclick="navigate('about')" class="btn-gold">Learn More</button>
+      </div>
+      <div class="bg-gradient-to-br from-[#D9909F] to-[#B76E79] rounded-3xl p-10 text-white hover-lift">
+        <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-4">OUR STORY</div>
+        <h3 class="font-display text-3xl font-bold mb-4">TheBasketEdit8</h3>
+        <p class="font-serif-elegant text-lg mb-6 opacity-90">We create personalized gift experiences through beautifully curated baskets designed for celebrations, memories, and meaningful moments.</p>
+        <button onclick="navigate('about')" class="btn-gold">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram Feed -->
+  <section class="py-20 bg-[#F5EFE6]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">FOLLOW US</div>
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">@poeticbluedesigns & @thebasketedit8</h2>
+        <div class="gold-divider w-32 mx-auto"></div>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="aspect-square overflow-hidden rounded-2xl hover-scale cursor-pointer">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl hover-scale cursor-pointer">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/10eca117c-6dc3-4092-8c56-e36a66489048.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl hover-scale cursor-pointer">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1e9215eeb-cc46-4bd7-b147-f91793fd6447.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="aspect-square overflow-hidden rounded-2xl hover-scale cursor-pointer">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/14bf590c9-4559-4502-9955-0fe644de7662.png" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto text-center">
+    <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">STAY CONNECTED</div>
+    <h2 class="font-display text-4xl md:text-5xl font-bold mb-4">Join Our Newsletter</h2>
+    <p class="font-serif-elegant text-lg mb-8 opacity-80">Get exclusive offers, new arrivals, and gifting inspiration delivered to your inbox.</p>
+    <form onsubmit="handleNewsletter(event)" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+      <input type="email" required placeholder="Your email address" class="input-elegant flex-1" />
+      <button type="submit" class="btn-royal">Subscribe</button>
+    </form>
+  </section>
+</div>
+
+<!-- ==================== SHOP PAGE ==================== -->
+<div id="page-shop" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">OUR COLLECTION</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4" id="shopTitle">All Products</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <!-- Filters -->
+    <div class="bg-white rounded-2xl p-6 mb-8 shadow-sm">
+      <div class="flex flex-wrap gap-4 items-center justify-between">
+        <div class="flex flex-wrap gap-2" id="categoryFilters">
+          <button class="filter-chip active" onclick="filterCategory('all', this)">All</button>
+          <button class="filter-chip" onclick="filterCategory('blue-pottery', this)">Blue Pottery</button>
+          <button class="filter-chip" onclick="filterCategory('crockery', this)">Crockery</button>
+          <button class="filter-chip" onclick="filterCategory('decorative', this)">Decorative</button>
+          <button class="filter-chip" onclick="filterCategory('camel-lamps', this)">Camel Skin Lamps</button>
+          <button class="filter-chip pink" onclick="filterCategory('custom-baskets', this)">Custom Baskets</button>
+          <button class="filter-chip pink" onclick="filterCategory('birthday-baskets', this)">Birthday</button>
+          <button class="filter-chip pink" onclick="filterCategory('wedding-baskets', this)">Wedding</button>
+        </div>
+        <div class="flex gap-3">
+          <select id="sortSelect" onchange="sortProducts(this.value)" class="input-elegant w-auto">
+            <option value="newest">Newest</option>
+            <option value="popularity">Popularity</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+      <div class="mt-4 flex flex-wrap gap-4 items-center">
+        <div class="flex items-center gap-2">
+          <label class="text-sm font-medium">Price:</label>
+          <input type="range" id="priceRange" min="0" max="50000" value="50000" oninput="filterByPrice(this.value)" class="w-48" />
+          <span id="priceValue" class="text-sm font-medium">Rs. 50,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div id="shopProducts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+
+    <!-- Pagination -->
+    <div class="flex justify-center gap-2 mt-12">
+      <button class="w-10 h-10 rounded-full bg-[#0A2E6D] text-white font-bold">1</button>
+      <button class="w-10 h-10 rounded-full hover:bg-gray-100 font-medium">2</button>
+      <button class="w-10 h-10 rounded-full hover:bg-gray-100 font-medium">3</button>
+      <button class="w-10 h-10 rounded-full hover:bg-gray-100 font-medium"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CATEGORIES PAGE ==================== -->
+<div id="page-categories" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">BROWSE</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">All Categories</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-gradient-to-br from-[#0A2E6D] to-[#1a4a9e] rounded-3xl p-10 text-white">
+        <div class="text-[#C9A961] text-xs tracking-[0.3em] mb-3">POETICBLUEDESIGNS</div>
+        <h2 class="font-display text-3xl font-bold mb-6">Heritage Collection</h2>
+        <div class="space-y-3">
+          <a onclick="navigate('shop', 'blue-pottery')" class="flex justify-between items-center py-3 border-b border-white/20 cursor-pointer hover:pl-2 transition-all">
+            <span>Blue Pottery</span><i class="fas fa-arrow-right"></i>
+          </a>
+          <a onclick="navigate('shop', 'crockery')" class="flex justify-between items-center py-3 border-b border-white/20 cursor-pointer hover:pl-2 transition-all">
+            <span>Crockery</span><i class="fas fa-arrow-right"></i>
+          </a>
+          <a onclick="navigate('shop', 'decorative')" class="flex justify-between items-center py-3 border-b border-white/20 cursor-pointer hover:pl-2 transition-all">
+            <span>Decorative Pieces</span><i class="fas fa-arrow-right"></i>
+          </a>
+          <a onclick="navigate('shop', 'camel-lamps')" class="flex justify-between items-center py-3 cursor-pointer hover:pl-2 transition-all">
+            <span>Camel Skin Lamps</span><i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-[#D9909F] to-[#B76E79] rounded-3xl p-10 text-white">
+        <div class="text-[#C9A961] text-xs tracking-[0.3em] mb-3">THEBASKETEDIT8</div>
+        <h2 class="font-display text-3xl font-bold mb-6">Gifting Collection</h2>
+        <div class="space-y-3">
+          <a onclick="navigate('shop', 'custom-baskets')" class="flex justify-between items-center py-3 border-b border-white/20 cursor-pointer hover:pl-2 transition-all">
+            <span>Custom Baskets</span><i class="fas fa-arrow-right"></i>
+          </a>
+          <a onclick="navigate('shop', 'birthday-baskets')" class="flex justify-between items-center py-3 border-b border-white/20 cursor-pointer hover:pl-2 transition-all">
+            <span>Birthday Baskets</span><i class="fas fa-arrow-right"></i>
+          </a>
+          <a onclick="navigate('shop', 'wedding-baskets')" class="flex justify-between items-center py-3 cursor-pointer hover:pl-2 transition-all">
+            <span>Wedding Baskets</span><i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== PRODUCT DETAIL PAGE ==================== -->
+<div id="page-product" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Image Gallery -->
+      <div>
+        <div class="aspect-square rounded-3xl overflow-hidden mb-4 bg-white">
+          <img id="productMainImage" src="" class="w-full h-full object-cover" />
+        </div>
+        <div id="productThumbnails" class="grid grid-cols-4 gap-3"></div>
+      </div>
+
+      <!-- Product Info -->
+      <div>
+        <div id="productBrand" class="text-xs tracking-[0.3em] text-[#C9A961] mb-2"></div>
+        <h1 id="productName" class="font-display text-4xl font-bold mb-3"></h1>
+        <div class="flex items-center gap-3 mb-4">
+          <div id="productRating" class="flex gap-1"></div>
+          <span class="text-sm opacity-70">(24 reviews)</span>
+        </div>
+        <div id="productPrice" class="font-display text-3xl font-bold text-[#0A2E6D] mb-6"></div>
+        <p id="productDescription" class="font-serif-elegant text-lg mb-6 opacity-80"></p>
+
+        <div class="space-y-4 mb-6">
+          <div class="flex gap-4 text-sm">
+            <span class="font-semibold w-24">Material:</span>
+            <span id="productMaterial"></span>
+          </div>
+          <div class="flex gap-4 text-sm">
+            <span class="font-semibold w-24">Dimensions:</span>
+            <span id="productDimensions"></span>
+          </div>
+          <div class="flex gap-4 text-sm">
+            <span class="font-semibold w-24">Availability:</span>
+            <span id="productStock" class="text-green-600 font-semibold"></span>
+          </div>
+        </div>
+
+        <!-- Basket Customization (shown for basket products) -->
+        <div id="basketCustomization" class="hidden bg-[#F5EFE6] rounded-2xl p-6 mb-6">
+          <h3 class="font-display text-xl font-bold mb-4">Customize Your Basket</h3>
+          <div class="space-y-4">
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Select Snacks & Gifts</label>
+              <div class="grid grid-cols-2 gap-2">
+                <label class="flex items-center gap-2 p-2 bg-white rounded-lg cursor-pointer">
+                  <input type="checkbox" class="basket-item" data-price="500" onchange="updateBasketPrice()" /> Chocolates
+                </label>
+                <label class="flex items-center gap-2 p-2 bg-white rounded-lg cursor-pointer">
+                  <input type="checkbox" class="basket-item" data-price="800" onchange="updateBasketPrice()" /> Cookies
+                </label>
+                <label class="flex items-center gap-2 p-2 bg-white rounded-lg cursor-pointer">
+                  <input type="checkbox" class="basket-item" data-price="1200" onchange="updateBasketPrice()" /> Dried Fruits
+                </label>
+                <label class="flex items-center gap-2 p-2 bg-white rounded-lg cursor-pointer">
+                  <input type="checkbox" class="basket-item" data-price="600" onchange="updateBasketPrice()" /> Tea Collection
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Custom Message Card</label>
+              <textarea class="input-elegant" rows="2" placeholder="Write your heartfelt message..."></textarea>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Upload Personalized Image</label>
+              <input type="file" class="input-elegant" accept="image/*" />
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Gift Wrapping</label>
+              <select class="input-elegant">
+                <option>Classic Beige</option>
+                <option>Royal Blue</option>
+                <option>Blush Pink</option>
+                <option>Rose Gold</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Delivery Date</label>
+              <input type="date" class="input-elegant" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3 mb-6">
+          <div class="flex items-center gap-2 bg-gray-100 rounded-full px-4">
+            <button class="qty-btn" onclick="changeQty(-1)"><i class="fas fa-minus text-xs"></i></button>
+            <span id="productQty" class="font-bold w-8 text-center">1</span>
+            <button class="qty-btn" onclick="changeQty(1)"><i class="fas fa-plus text-xs"></i></button>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3 mb-8">
+          <button onclick="addToCartFromProduct()" class="btn-royal flex-1">
+            <i class="fas fa-shopping-bag mr-2"></i> Add to Cart
+          </button>
+          <button onclick="buyNow()" class="btn-gold flex-1">
+            <i class="fas fa-bolt mr-2"></i> Buy Now
+          </button>
+          <button onclick="toggleWishlist()" class="w-12 h-12 rounded-full border-2 border-gray-200 flex items-center justify-center hover:border-[#D9909F] hover:text-[#D9909F] transition">
+            <i id="wishlistIcon" class="far fa-heart"></i>
+          </button>
+        </div>
+
+        <!-- Share -->
+        <div class="flex items-center gap-4 pt-6 border-t border-gray-200">
+          <span class="text-sm font-semibold">Share:</span>
+          <a href="#" class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 text-white flex items-center justify-center hover:scale-110 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/923046124608" class="w-10 h-10 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:scale-110 transition">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:scale-110 transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+
+        <!-- Reviews -->
+        <div class="mt-10">
+          <h3 class="font-display text-2xl font-bold mb-4">Customer Reviews</h3>
+          <div class="space-y-4">
+            <div class="bg-white rounded-xl p-4">
+              <div class="flex justify-between mb-2">
+                <div class="font-semibold">Ayesha K.</div>
+                <div class="flex gap-1 text-sm">
+                  <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i>
+                </div>
+              </div>
+              <p class="text-sm opacity-80">Absolutely stunning craftsmanship! The blue pottery vase is a masterpiece.</p>
+            </div>
+            <div class="bg-white rounded-xl p-4">
+              <div class="flex justify-between mb-2">
+                <div class="font-semibold">Fatima R.</div>
+                <div class="flex gap-1 text-sm">
+                  <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="fas fa-star star"></i><i class="far fa-star star empty"></i>
+                </div>
+              </div>
+              <p class="text-sm opacity-80">The gift basket was beautifully curated. My sister loved it!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Similar Products -->
+    <div class="mt-20">
+      <h2 class="font-display text-3xl font-bold mb-8 text-center">You May Also Like</h2>
+      <div id="similarProducts" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CART PAGE ==================== -->
+<div id="page-cart" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">YOUR SELECTION</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Shopping Cart</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2">
+        <div id="cartItems" class="space-y-4"></div>
+        <div id="emptyCart" class="hidden text-center py-20">
+          <i class="fas fa-shopping-bag text-6xl text-gray-300 mb-4"></i>
+          <h3 class="font-display text-2xl font-bold mb-2">Your cart is empty</h3>
+          <p class="opacity-70 mb-6">Start adding some beautiful items!</p>
+          <button onclick="navigate('shop')" class="btn-royal">Browse Products</button>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 h-fit sticky top-28">
+        <h3 class="font-display text-xl font-bold mb-4">Order Summary</h3>
+        <div class="space-y-3 mb-4 pb-4 border-b border-gray-200">
+          <div class="flex justify-between text-sm">
+            <span>Subtotal</span>
+            <span id="cartSubtotal">Rs. 0</span>
+          </div>
+          <div class="flex justify-between text-sm">
+            <span>Shipping</span>
+            <span id="cartShipping">Calculated at checkout</span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <input type="text" placeholder="Discount code" class="input-elegant mb-2" />
+          <button class="btn-gold w-full text-sm py-2">Apply Code</button>
+        </div>
+        <div class="flex justify-between font-bold text-lg mb-6">
+          <span>Total</span>
+          <span id="cartTotal" class="text-[#0A2E6D]">Rs. 0</span>
+        </div>
+        <button onclick="navigate('checkout')" class="btn-royal w-full">
+          Proceed to Checkout <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+        <button onclick="navigate('shop')" class="text-sm text-center w-full mt-3 opacity-70 hover:opacity-100">Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CHECKOUT PAGE ==================== -->
+<div id="page-checkout" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">SECURE CHECKOUT</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Complete Your Order</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="lg:col-span-2 space-y-6">
+        <!-- Contact -->
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="font-display text-xl font-bold mb-4">Contact Information</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="email" placeholder="Email" class="input-elegant" />
+            <input type="tel" placeholder="Phone" class="input-elegant" />
+          </div>
+          <label class="flex items-center gap-2 mt-3 text-sm">
+            <input type="checkbox" /> Email me with news and offers
+          </label>
+        </div>
+
+        <!-- Shipping -->
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="font-display text-xl font-bold mb-4">Shipping Address</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="First Name" class="input-elegant" />
+            <input type="text" placeholder="Last Name" class="input-elegant" />
+            <input type="text" placeholder="Address" class="input-elegant sm:col-span-2" />
+            <input type="text" placeholder="City" class="input-elegant" />
+            <input type="text" placeholder="Postal Code" class="input-elegant" />
+            <select class="input-elegant sm:col-span-2">
+              <option>Pakistan</option>
+              <option>United Arab Emirates</option>
+              <option>United Kingdom</option>
+              <option>United States</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="bg-white rounded-2xl p-6">
+          <h3 class="font-display text-xl font-bold mb-4">Payment Method</h3>
+          <div class="space-y-3">
+            <label class="flex items-center gap-3 p-4 border-2 border-[#0A2E6D] rounded-xl cursor-pointer bg-blue-50">
+              <input type="radio" name="payment" checked />
+              <i class="fas fa-money-bill-wave text-[#0A2E6D]"></i>
+              <span class="font-semibold">Cash on Delivery</span>
+            </label>
+            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-[#0A2E6D]">
+              <input type="radio" name="payment" />
+              <i class="fas fa-university text-[#0A2E6D]"></i>
+              <span class="font-semibold">Bank Transfer</span>
+            </label>
+            <label class="flex items-center gap-3 p-4 border-2 border-gray-200 rounded-xl cursor-pointer hover:border-[#0A2E6D]">
+              <input type="radio" name="payment" />
+              <i class="fab fa-cc-stripe text-[#0A2E6D]"></i>
+              <span class="font-semibold">Credit/Debit Card (Stripe)</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 h-fit sticky top-28">
+        <h3 class="font-display text-xl font-bold mb-4">Order Summary</h3>
+        <div id="checkoutItems" class="space-y-3 mb-4 max-h-60 overflow-y-auto"></div>
+        <div class="gold-divider"></div>
+        <div class="space-y-2 text-sm mb-4">
+          <div class="flex justify-between"><span>Subtotal</span><span id="checkoutSubtotal">Rs. 0</span></div>
+          <div class="flex justify-between"><span>Shipping</span><span>Rs. 300</span></div>
+          <div class="flex justify-between"><span>Tax</span><span>Rs. 0</span></div>
+        </div>
+        <div class="gold-divider"></div>
+        <div class="flex justify-between font-bold text-lg mb-6">
+          <span>Total</span>
+          <span id="checkoutTotal" class="text-[#0A2E6D]">Rs. 0</span>
+        </div>
+        <button onclick="placeOrder()" class="btn-royal w-full">
+          <i class="fas fa-lock mr-2"></i> Place Order
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ACCOUNT PAGE ==================== -->
+<div id="page-account" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">MY ACCOUNT</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Welcome Back</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+      <!-- Sidebar -->
+      <div class="bg-white rounded-2xl p-6 h-fit">
+        <div class="flex items-center gap-3 mb-6 pb-6 border-b">
+          <div class="w-14 h-14 rounded-full bg-gradient-to-br from-[#0A2E6D] to-[#D9909F] flex items-center justify-center text-white font-bold text-xl">A</div>
+          <div>
+            <div class="font-bold">Ayesha Khan</div>
+            <div class="text-sm opacity-70">ayesha@email.com</div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <button onclick="showAccountTab('profile')" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-50 font-medium account-tab active" data-tab="profile">
+            <i class="fas fa-user mr-3 w-5"></i> Profile
+          </button>
+          <button onclick="showAccountTab('orders')" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-50 font-medium account-tab" data-tab="orders">
+            <i class="fas fa-box mr-3 w-5"></i> Orders
+          </button>
+          <button onclick="showAccountTab('wishlist')" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-50 font-medium account-tab" data-tab="wishlist">
+            <i class="fas fa-heart mr-3 w-5"></i> Wishlist
+          </button>
+          <button onclick="showAccountTab('addresses')" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-50 font-medium account-tab" data-tab="addresses">
+            <i class="fas fa-map-marker-alt mr-3 w-5"></i> Addresses
+          </button>
+          <button onclick="navigate('admin')" class="w-full text-left px-4 py-3 rounded-lg hover:bg-gray-50 font-medium text-[#0A2E6D]">
+            <i class="fas fa-cog mr-3 w-5"></i> Admin Panel
+          </button>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="lg:col-span-3">
+        <!-- Profile Tab -->
+        <div id="tab-profile" class="account-content bg-white rounded-2xl p-6">
+          <h2 class="font-display text-2xl font-bold mb-6">Profile Information</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-semibold mb-2 block">First Name</label>
+              <input type="text" value="Ayesha" class="input-elegant" />
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Last Name</label>
+              <input type="text" value="Khan" class="input-elegant" />
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Email</label>
+              <input type="email" value="ayesha@email.com" class="input-elegant" />
+            </div>
+            <div>
+              <label class="text-sm font-semibold mb-2 block">Phone</label>
+              <input type="tel" value="+92 304 6124608" class="input-elegant" />
+            </div>
+          </div>
+          <button class="btn-royal mt-6">Save Changes</button>
+        </div>
+
+        <!-- Orders Tab -->
+        <div id="tab-orders" class="account-content hidden bg-white rounded-2xl p-6">
+          <h2 class="font-display text-2xl font-bold mb-6">Order History</h2>
+          <div class="space-y-4">
+            <div class="border border-gray-200 rounded-xl p-4">
+              <div class="flex justify-between mb-3 flex-wrap gap-2">
+                <div>
+                  <div class="font-bold">Order #PBD-2026-001</div>
+                  <div class="text-sm opacity-70">June 28, 2026</div>
+                </div>
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-semibold">Delivered</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-sm opacity-80">Blue Pottery Vase × 1</div>
+                <div class="font-bold">Rs. 8,500</div>
+              </div>
+              <button class="text-sm text-[#0A2E6D] font-semibold mt-3 hover:underline">Track Order</button>
+            </div>
+            <div class="border border-gray-200 rounded-xl p-4">
+              <div class="flex justify-between mb-3 flex-wrap gap-2">
+                <div>
+                  <div class="font-bold">Order #TBE-2026-045</div>
+                  <div class="text-sm opacity-70">June 25, 2026</div>
+                </div>
+                <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-semibold">In Transit</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <div class="text-sm opacity-80">Wedding Gift Basket × 1</div>
+                <div class="font-bold">Rs. 15,000</div>
+              </div>
+              <button class="text-sm text-[#0A2E6D] font-semibold mt-3 hover:underline">Track Order</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wishlist Tab -->
+        <div id="tab-wishlist" class="account-content hidden bg-white rounded-2xl p-6">
+          <h2 class="font-display text-2xl font-bold mb-6">My Wishlist</h2>
+          <div id="wishlistItems" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+        </div>
+
+        <!-- Addresses Tab -->
+        <div id="tab-addresses" class="account-content hidden bg-white rounded-2xl p-6">
+          <h2 class="font-display text-2xl font-bold mb-6">Saved Addresses</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="border-2 border-[#0A2E6D] rounded-xl p-4 relative">
+              <span class="absolute top-3 right-3 text-xs bg-[#0A2E6D] text-white px-2 py-1 rounded">Default</span>
+              <div class="font-bold mb-2">Home</div>
+              <div class="text-sm opacity-80">123 Blue Street, Multan, Punjab, Pakistan</div>
+              <div class="text-sm opacity-80 mt-2">+92 304 6124608</div>
+            </div>
+            <div class="border border-gray-200 rounded-xl p-4">
+              <div class="font-bold mb-2">Office</div>
+              <div class="text-sm opacity-80">456 Heritage Ave, Lahore, Punjab, Pakistan</div>
+              <div class="text-sm opacity-80 mt-2">+92 300 1234567</div>
+            </div>
+          </div>
+          <button class="btn-gold mt-6"><i class="fas fa-plus mr-2"></i> Add New Address</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ADMIN PAGE ==================== -->
+<div id="page-admin" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">ADMIN PANEL</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Dashboard</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+      <div class="bg-gradient-to-br from-[#0A2E6D] to-[#1a4a9e] rounded-2xl p-6 text-white">
+        <div class="text-sm opacity-80 mb-2">Total Sales</div>
+        <div class="font-display text-3xl font-bold">Rs. 485,000</div>
+        <div class="text-xs mt-2 text-green-300"><i class="fas fa-arrow-up"></i> 12% this month</div>
+      </div>
+      <div class="bg-gradient-to-br from-[#D9909F] to-[#B76E79] rounded-2xl p-6 text-white">
+        <div class="text-sm opacity-80 mb-2">Orders</div>
+        <div class="font-display text-3xl font-bold">142</div>
+        <div class="text-xs mt-2 text-green-300"><i class="fas fa-arrow-up"></i> 8% this month</div>
+      </div>
+      <div class="bg-gradient-to-br from-[#C9A961] to-[#a8883f] rounded-2xl p-6 text-white">
+        <div class="text-sm opacity-80 mb-2">Products</div>
+        <div class="font-display text-3xl font-bold">48</div>
+        <div class="text-xs mt-2">Active listings</div>
+      </div>
+      <div class="bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl p-6 text-white">
+        <div class="text-sm opacity-80 mb-2">Customers</div>
+        <div class="font-display text-3xl font-bold">856</div>
+        <div class="text-xs mt-2 text-green-300"><i class="fas fa-arrow-up"></i> 15% this month</div>
+      </div>
+    </div>
+
+    <!-- Admin Tabs -->
+    <div class="flex flex-wrap gap-2 mb-6 border-b border-gray-200 pb-4">
+      <button onclick="showAdminTab('products')" class="admin-tab active px-4 py-2 rounded-lg font-medium" data-tab="products">Products</button>
+      <button onclick="showAdminTab('orders')" class="admin-tab px-4 py-2 rounded-lg font-medium" data-tab="orders">Orders</button>
+      <button onclick="showAdminTab('customers')" class="admin-tab px-4 py-2 rounded-lg font-medium" data-tab="customers">Customers</button>
+      <button onclick="showAdminTab('analytics')" class="admin-tab px-4 py-2 rounded-lg font-medium" data-tab="analytics">Analytics</button>
+      <button onclick="showAdminTab('discounts')" class="admin-tab px-4 py-2 rounded-lg font-medium" data-tab="discounts">Discounts</button>
+    </div>
+
+    <!-- Products Tab -->
+    <div id="admin-products" class="admin-content bg-white rounded-2xl p-6">
+      <div class="flex justify-between items-center mb-6 flex-wrap gap-3">
+        <h2 class="font-display text-2xl font-bold">Manage Products</h2>
+        <button class="btn-royal"><i class="fas fa-plus mr-2"></i> Add Product</button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full">
+          <thead>
+            <tr class="border-b text-left text-sm">
+              <th class="pb-3">Product</th>
+              <th class="pb-3">Category</th>
+              <th class="pb-3">Price</th>
+              <th class="pb-3">Stock</th>
+              <th class="pb-3">Status</th>
+              <th class="pb-3">Actions</th>
+            </tr>
+          </thead>
+          <tbody class="text-sm">
+            <tr class="border-b">
+              <td class="py-4 flex items-center gap-3">
+                <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png" class="w-12 h-12 rounded-lg object-cover" />
+                <span class="font-semibold">Blue Pottery Vase</span>
+              </td>
+              <td>Blue Pottery</td>
+              <td>Rs. 8,500</td>
+              <td>12</td>
+              <td><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span></td>
+              <td><button class="text-[#0A2E6D] hover:underline">Edit</button></td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-4 flex items-center gap-3">
+                <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1e9215eeb-cc46-4bd7-b147-f91793fd6447.png" class="w-12 h-12 rounded-lg object-cover" />
+                <span class="font-semibold">Camel Skin Lamp</span>
+              </td>
+              <td>Camel Lamps</td>
+              <td>Rs. 12,000</td>
+              <td>5</td>
+              <td><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span></td>
+              <td><button class="text-[#0A2E6D] hover:underline">Edit</button></td>
+            </tr>
+            <tr class="border-b">
+              <td class="py-4 flex items-center gap-3">
+                <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/10eca117c-6dc3-4092-8c56-e36a66489048.png" class="w-12 h-12 rounded-lg object-cover" />
+                <span class="font-semibold">Luxury Gift Basket</span>
+              </td>
+              <td>Custom Baskets</td>
+              <td>Rs. 15,000</td>
+              <td>8</td>
+              <td><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span></td>
+              <td><button class="text-[#0A2E6D] hover:underline">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Orders Tab -->
+    <div id="admin-orders" class="admin-content hidden bg-white rounded-2xl p-6">
+      <h2 class="font-display text-2xl font-bold mb-6">Recent Orders</h2>
+      <div class="space-y-3">
+        <div class="border rounded-xl p-4 flex justify-between items-center flex-wrap gap-3">
+          <div>
+            <div class="font-bold">#PBD-2026-001</div>
+            <div class="text-sm opacity-70">Ayesha Khan • June 28, 2026</div>
+          </div>
+          <div class="font-bold">Rs. 8,500</div>
+          <select class="input-elegant w-auto">
+            <option>Delivered</option>
+            <option>In Transit</option>
+            <option>Processing</option>
+          </select>
+        </div>
+        <div class="border rounded-xl p-4 flex justify-between items-center flex-wrap gap-3">
+          <div>
+            <div class="font-bold">#TBE-2026-045</div>
+            <div class="text-sm opacity-70">Fatima Raza • June 25, 2026</div>
+          </div>
+          <div class="font-bold">Rs. 15,000</div>
+          <select class="input-elegant w-auto">
+            <option>In Transit</option>
+            <option>Delivered</option>
+            <option>Processing</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Customers Tab -->
+    <div id="admin-customers" class="admin-content hidden bg-white rounded-2xl p-6">
+      <h2 class="font-display text-2xl font-bold mb-6">Customer Management</h2>
+      <div class="space-y-3">
+        <div class="border rounded-xl p-4 flex justify-between items-center flex-wrap gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#0A2E6D] to-[#D9909F] flex items-center justify-center text-white font-bold">A</div>
+            <div>
+              <div class="font-bold">Ayesha Khan</div>
+              <div class="text-sm opacity-70">ayesha@email.com</div>
+            </div>
+          </div>
+          <div class="text-sm">12 orders</div>
+        </div>
+        <div class="border rounded-xl p-4 flex justify-between items-center flex-wrap gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#0A2E6D] to-[#D9909F] flex items-center justify-center text-white font-bold">F</div>
+            <div>
+              <div class="font-bold">Fatima Raza</div>
+              <div class="text-sm opacity-70">fatima@email.com</div>
+            </div>
+          </div>
+          <div class="text-sm">8 orders</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics Tab -->
+    <div id="admin-analytics" class="admin-content hidden bg-white rounded-2xl p-6">
+      <h2 class="font-display text-2xl font-bold mb-6">Sales Analytics</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <h3 class="font-semibold mb-3">Sales by Category</h3>
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span>Blue Pottery</span><span>45%</span></div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-[#0A2E6D]" style="width:45%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span>Custom Baskets</span><span>30%</span></div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-[#D9909F]" style="width:30%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span>Camel Lamps</span><span>15%</span></div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-[#C9A961]" style="width:15%"></div></div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm mb-1"><span>Wedding Baskets</span><span>10%</span></div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden"><div class="h-full bg-[#B76E79]" style="width:10%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-3">Monthly Revenue</h3>
+          <div class="flex items-end gap-2 h-40">
+            <div class="flex-1 bg-[#0A2E6D] rounded-t" style="height:40%"></div>
+            <div class="flex-1 bg-[#0A2E6D] rounded-t" style="height:60%"></div>
+            <div class="flex-1 bg-[#0A2E6D] rounded-t" style="height:45%"></div>
+            <div class="flex-1 bg-[#0A2E6D] rounded-t" style="height:80%"></div>
+            <div class="flex-1 bg-[#0A2E6D] rounded-t" style="height:65%"></div>
+            <div class="flex-1 bg-[#D9909F] rounded-t" style="height:90%"></div>
+          </div>
+          <div class="flex justify-between text-xs mt-2 opacity-70">
+            <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discounts Tab -->
+    <div id="admin-discounts" class="admin-content hidden bg-white rounded-2xl p-6">
+      <div class="flex justify-between items-center mb-6 flex-wrap gap-3">
+        <h2 class="font-display text-2xl font-bold">Discount Codes</h2>
+        <button class="btn-royal"><i class="fas fa-plus mr-2"></i> Create Code</button>
+      </div>
+      <div class="space-y-3">
+        <div class="border rounded-xl p-4 flex justify-between items-center flex-wrap gap-3">
+          <div>
+            <div class="font-bold font-mono">WELCOME10</div>
+            <div class="text-sm opacity-70">10% off • Used 45 times</div>
+          </div>
+          <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Active</span>
+        </div>
+        <div class="border rounded-xl p-4 flex justify-between items-center flex-wrap gap-3">
+          <div>
+            <div class="font-bold font-mono">SUMMER20</div>
+            <div class="text-sm opacity-70">20% off • Used 23 times</div>
+          </div>
+          <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs">Active</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== ABOUT PAGE ==================== -->
+<div id="page-about" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">OUR STORY</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-gradient-to-br from-[#0A2E6D] to-[#1a4a9e] rounded-3xl p-10 text-white">
+        <div class="text-[#C9A961] text-xs tracking-[0.3em] mb-3">POETICBLUEDESIGNS</div>
+        <h2 class="font-display text-3xl font-bold mb-4">Heritage & Craftsmanship</h2>
+        <p class="font-serif-elegant text-lg mb-6 opacity-90">We preserve traditional craftsmanship through handcrafted blue pottery, camel skin lamps, and timeless decorative pieces that celebrate culture and artistry.</p>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div>
+            <div class="font-display text-2xl font-bold text-[#C9A961]">15+</div>
+            <div class="text-xs opacity-80">Years</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold text-[#C9A961]">500+</div>
+            <div class="text-xs opacity-80">Products</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold text-[#C9A961]">1000+</div>
+            <div class="text-xs opacity-80">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gradient-to-br from-[#D9909F] to-[#B76E79] rounded-3xl p-10 text-white">
+        <div class="text-[#C9A961] text-xs tracking-[0.3em] mb-3">THEBASKETEDIT8</div>
+        <h2 class="font-display text-3xl font-bold mb-4">Thoughtful Gifting</h2>
+        <p class="font-serif-elegant text-lg mb-6 opacity-90">We create personalized gift experiences through beautifully curated baskets designed for celebrations, memories, and meaningful moments.</p>
+        <div class="grid grid-cols-3 gap-4 text-center">
+          <div>
+            <div class="font-display text-2xl font-bold text-[#C9A961]">5+</div>
+            <div class="text-xs opacity-80">Years</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold text-[#C9A961]">300+</div>
+            <div class="text-xs opacity-80">Baskets</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl font-bold text-[#C9A961]">800+</div>
+            <div class="text-xs opacity-80">Deliveries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-3xl p-10 text-center">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-3">OUR MISSION</div>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-6">Two Brands. One Promise.</h2>
+      <p class="font-serif-elegant text-xl max-w-3xl mx-auto opacity-80">Handmade with Love, Crafted for Memories. We believe in the power of thoughtful craftsmanship and meaningful gifting to bring joy to every home and every celebration.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== BLOG PAGE ==================== -->
+<div id="page-blog" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">INSPIRATION</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Our Blog</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article class="product-card hover-lift cursor-pointer">
+        <div class="aspect-video overflow-hidden">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-[#C9A961] tracking-widest mb-2">HOME DECOR</div>
+          <h3 class="font-display text-xl font-bold mb-2">The Art of Blue Pottery: A Heritage Preserved</h3>
+          <p class="text-sm opacity-70 mb-4">Discover the centuries-old tradition of blue pottery and how it continues to inspire modern homes...</p>
+          <div class="text-xs opacity-60">June 25, 2026 • 5 min read</div>
+        </div>
+      </article>
+
+      <article class="product-card hover-lift cursor-pointer">
+        <div class="aspect-video overflow-hidden">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/10eca117c-6dc3-4092-8c56-e36a66489048.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-[#D9909F] tracking-widest mb-2">GIFTING IDEAS</div>
+          <h3 class="font-display text-xl font-bold mb-2">10 Thoughtful Gift Basket Ideas for Every Occasion</h3>
+          <p class="text-sm opacity-70 mb-4">From birthdays to weddings, learn how to curate the perfect gift basket that speaks from the heart...</p>
+          <div class="text-xs opacity-60">June 20, 2026 • 7 min read</div>
+        </div>
+      </article>
+
+      <article class="product-card hover-lift cursor-pointer">
+        <div class="aspect-video overflow-hidden">
+          <img src="https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1e9215eeb-cc46-4bd7-b147-f91793fd6447.png" class="w-full h-full object-cover" />
+        </div>
+        <div class="p-6">
+          <div class="text-xs text-[#C9A961] tracking-widest mb-2">CRAFTSMANSHIP</div>
+          <h3 class="font-display text-xl font-bold mb-2">Camel Skin Lamps: Illuminating Tradition</h3>
+          <p class="text-sm opacity-70 mb-4">The intricate art of camel skin lamp making and how these pieces bring warmth to any space...</p>
+          <div class="text-xs opacity-60">June 15, 2026 • 6 min read</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== CONTACT PAGE ==================== -->
+<div id="page-contact" class="page">
+  <div class="pt-28 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-[#C9A961] text-sm tracking-[0.3em] mb-2">GET IN TOUCH</div>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+      <div class="gold-divider w-32 mx-auto"></div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div class="bg-gradient-to-br from-[#0A2E6D] to-[#1a4a9e] rounded-3xl p-8 text-white">
+          <h2 class="font-display text-2xl font-bold mb-6">Reach Out to Us</h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Address</div>
+                <div class="text-sm opacity-90">Multan, Punjab, Pakistan</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Phone</div>
+                <div class="text-sm opacity-90">+92 304 6124608</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0">
+                <i class="fab fa-instagram"></i>
+              </div>
+              <div>
+                <div class="font-semibold mb-1">Instagram</div>
+                <div class="text-sm opacity-90">@poeticbluedesigns</div>
+                <div class="text-sm opacity-90">@thebasketedit8</div>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/923046124608" target="_blank" class="btn-gold mt-6 inline-block">
+            <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+          </a>
+        </div>
+
+        <!-- Map -->
+        <div class="rounded-3xl overflow-hidden h-64 bg-gray-200">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109738.87387760047!2d71.4503825!3d30.1915095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b86c6c0b8e6b7%3A0x4b0b0b0b0b0b0b0b!2sMultan%2C+Punjab%2C+Pakistan!5e0!3m2!1sen!2s!4v1234567890" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-3xl p-8">
+        <h2 class="font-display text-2xl font-bold mb-6">Send Us a Message</h2>
+        <form onsubmit="handleContact(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" required placeholder="First Name" class="input-elegant" />
+            <input type="text" required placeholder="Last Name" class="input-elegant" />
+          </div>
+          <input type="email" required placeholder="Email" class="input-elegant" />
+          <input type="tel" placeholder="Phone" class="input-elegant" />
+          <select class="input-elegant">
+            <option>General Inquiry</option>
+            <option>Order Support</option>
+            <option>Custom Basket Request</option>
+            <option>Wholesale</option>
+          </select>
+          <textarea required placeholder="Your message..." rows="5" class="input-elegant"></textarea>
+          <button type="submit" class="btn-royal w-full">
+            <i class="fas fa-paper-plane mr-2"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-br from-[#0A2E6D] via-[#1a1a1a] to-[#D9909F] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-br from-[#C9A961] to-[#E8D48B] flex items-center justify-center">
+            <i class="fas fa-gem text-[#0A2E6D] text-lg"></i>
+          </div>
+          <div>
+            <div class="font-display font-bold">PoeticBlue</div>
+            <div class="font-display font-bold text-[#D9909F]">& BasketEdit</div>
+          </div>
+        </div>
+        <p class="font-serif-elegant text-sm opacity-80 mb-4">Two Brands. One Promise. Handmade with Love, Crafted for Memories.</p>
+        <div class="flex gap-3">
+          <a href="https://www.instagram.com/poeticbluedesigns" target="_blank" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.instagram.com/thebasketedit8" target="_blank" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/923046124608" target="_blank" class="w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 flex items-center justify-center transition"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-display font-bold mb-4">PoeticBlueDesigns</h4>
+        <ul class="space-y-2 text-sm opacity-80">
+          <li><a onclick="navigate('shop', 'blue-pottery')" class="cursor-pointer hover:text-[#C9A961]">Blue Pottery</a></li>
+          <li><a onclick="navigate('shop', 'crockery')" class="cursor-pointer hover:text-[#C9A961]">Crockery</a></li>
+          <li><a onclick="navigate('shop', 'decorative')" class="cursor-pointer hover:text-[#C9A961]">Decorative Pieces</a></li>
+          <li><a onclick="navigate('shop', 'camel-lamps')" class="cursor-pointer hover:text-[#C9A961]">Camel Skin Lamps</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-bold mb-4">TheBasketEdit8</h4>
+        <ul class="space-y-2 text-sm opacity-80">
+          <li><a onclick="navigate('shop', 'custom-baskets')" class="cursor-pointer hover:text-[#C9A961]">Custom Baskets</a></li>
+          <li><a onclick="navigate('shop', 'birthday-baskets')" class="cursor-pointer hover:text-[#C9A961]">Birthday Baskets</a></li>
+          <li><a onclick="navigate('shop', 'wedding-baskets')" class="cursor-pointer hover:text-[#C9A961]">Wedding Baskets</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-bold mb-4">Quick Links</h4>
+        <ul class="space-y-2 text-sm opacity-80">
+          <li><a onclick="navigate('about')" class="cursor-pointer hover:text-[#C9A961]">About Us</a></li>
+          <li><a onclick="navigate('contact')" class="cursor-pointer hover:text-[#C9A961]">Contact</a></li>
+          <li><a onclick="navigate('blog')" class="cursor-pointer hover:text-[#C9A961]">Blog</a></li>
+          <li><a onclick="navigate('account')" class="cursor-pointer hover:text-[#C9A961]">My Account</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gold-divider"></div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-80">
+      <div>© 2026 PoeticBlueDesigns & TheBasketEdit8. All rights reserved.</div>
+      <div class="flex gap-6">
+        <a class="cursor-pointer hover:text-[#C9A961]">Privacy Policy</a>
+        <a class="cursor-pointer hover:text-[#C9A961]">Terms of Service</a>
+        <a class="cursor-pointer hover:text-[#C9A961]">Shipping Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ==================== DATA ====================
+const products = [
+  { id: 1, name: "Royal Blue Pottery Vase", brand: "poeticblue", category: "blue-pottery", price: 8500, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png", material: "Handcrafted Ceramic", dimensions: "12\" H × 6\" W", stock: 12, rating: 5, description: "Exquisite handcrafted blue pottery vase featuring traditional floral motifs in royal blue and gold. Each piece is uniquely made by skilled artisans." },
+  { id: 2, name: "Blue Pottery Dinner Set", brand: "poeticblue", category: "crockery", price: 15000, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/154a3ad1f-d6bf-4f8f-bbfe-d6ab6b944d5c.png", material: "Ceramic", dimensions: "10\" Plate, 6\" Bowl", stock: 8, rating: 5, description: "Complete dinner set with intricate blue and white patterns. Includes plates, bowls, and cups." },
+  { id: 3, name: "Camel Skin Lamp - Royal", brand: "poeticblue", category: "camel-lamps", price: 12000, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1e9215eeb-cc46-4bd7-b147-f91793fd6447.png", material: "Camel Skin & Brass", dimensions: "14\" H × 8\" W", stock: 5, rating: 5, description: "Handcrafted camel skin lamp with intricate cutwork patterns. Creates a warm, ambient glow perfect for any room." },
+  { id: 4, name: "Decorative Blue Bowl", brand: "poeticblue", category: "decorative", price: 4500, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/1c3d4e7d2-5d4a-4924-b631-c63e89d27563.png", material: "Ceramic", dimensions: "8\" diameter", stock: 20, rating: 4, description: "Beautiful decorative bowl with traditional blue patterns. Perfect as a centerpiece or functional piece." },
+  { id: 5, name: "Luxury Gift Basket - Classic", brand: "basketedit", category: "custom-baskets", price: 15000, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/10eca117c-6dc3-4092-8c56-e36a66489048.png", material: "Wicker Basket", dimensions: "14\" × 10\" × 8\"", stock: 10, rating: 5, description: "Premium gift basket with roses, chocolates, and wine. Fully customizable with your personal touch.", isBasket: true },
+  { id: 6, name: "Birthday Celebration Basket", brand: "basketedit", category: "birthday-baskets", price: 12000, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/14d562e05-acfc-49fc-b0c0-24fa96dccc3d.png", material: "Wicker Basket", dimensions: "14\" × 10\" × 8\"", stock: 15, rating: 5, description: "Festive birthday basket with cake, chocolates, and personalized items. Make their day special!", isBasket: true },
+  { id: 7, name: "Wedding Elegance Basket", brand: "basketedit", category: "wedding-baskets", price: 25000, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/14bf590c9-4559-4502-9955-0fe644de7662.png", material: "Premium Wicker", dimensions: "16\" × 12\" × 10\"", stock: 6, rating: 5, description: "Luxurious wedding basket with white roses, champagne, and personalized gifts. Perfect for the special couple.", isBasket: true },
+  { id: 8, name: "Blue Pottery Tea Set", brand: "poeticblue", category: "crockery", price: 6500, image: "https://image.qwenlm.ai/public_source/feff4c22-e5a6-46a0-9156-c8e34462d0db/154a3ad1f-d6bf-4f8f-bbfe-d6ab6b944d5c.png", material: "Ceramic", dimensions: "Teapot + 4 cups", stock: 15, rating: 4, description: "Elegant tea set with traditional blue patterns. Perfect for afternoon tea gatherings." },
+];
+
+// ==================== STATE ====================
+let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+let wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
+let currentProduct = null;
+let currentQty = 1;
+let currentLang = 'en';
+let currentTheme = 'light';
+let currentCategory = 'all';
+let maxPrice = 50000;
+
+// ==================== NAVIGATION ====================
+function navigate(page, param) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const target = document.getElementById(`page-${page}`);
+  if (target) {
+    target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  if (page === 'shop') {
+    if (param) {
+      currentCategory = param;
+      document.querySelectorAll('#categoryFilters .filter-chip').forEach(c => c.classList.remove('active'));
+      const match = Array.from(document.querySelectorAll('#categoryFilters .filter-chip')).find(c => c.textContent.toLowerCase().replace(' ', '-') === param || c.onclick.toString().includes(`'${param}'`));
+      if (match) match.classList.add('active');
+    }
+    renderShopProducts();
+  }
+  if (page === 'cart') renderCart();
+  if (page === 'checkout') renderCheckout();
+  if (page === 'account') renderWishlistTab();
+}
+
+// ==================== PRODUCT RENDERING ====================
+function renderProductCard(product) {
+  const brandColor = product.brand === 'poeticblue' ? '#0A2E6D' : '#D9909F';
+  const brandName = product.brand === 'poeticblue' ? 'POETICBLUEDESIGNS' : 'THEBASKETEDIT8';
+  const stars = Array(5).fill(0).map((_, i) => `<i class="fas fa-star star ${i < product.rating ? '' : 'empty'}"></i>`).join('');
+  return `
+    <div class="product-card hover-lift cursor-pointer" onclick="openProduct(${product.id})">
+      <div class="aspect-square overflow-hidden rounded-t-2xl bg-gray-100">
+        <img src="${product.image}" class="w-full h-full object-cover" />
+      </div>
+      <div class="p-5">
+        <div class="text-xs tracking-widest mb-1" style="color:${brandColor}">${brandName}</div>
+        <h3 class="font-display font-bold text-lg mb-2 line-clamp-1">${product.name}</h3>
+        <div class="flex gap-1 text-xs mb-2">${stars}</div>
+        <div class="flex justify-between items-center">
+          <div class="font-bold text-lg" style="color:${brandColor}">Rs. ${product.price.toLocaleString()}</div>
+          <button onclick="event.stopPropagation(); quickAdd(${product.id})" class="w-9 h-9 rounded-full bg-gradient-to-br from-[#C9A961] to-[#E8D48B] text-white flex items-center justify-center hover:scale-110 transition">
+            <i class="fas fa-plus text-sm"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderFeaturedProducts() {
+  const featured = products.slice(0, 4);
+  document.getElementById('featuredProducts').innerHTML = featured.map(renderProductCard).join('');
+}
+
+function renderShopProducts() {
+  let filtered = products;
+  if (currentCategory !== 'all') {
+    filtered = products.filter(p => p.category === currentCategory);
+  }
+  filtered = filtered.filter(p => p.price <= maxPrice);
+
+  const sort = document.getElementById('sortSelect').value;
+  if (sort === 'price-low') filtered.sort((a, b) => a.price - b.price);
+  if (sort === 'price-high') filtered.sort((a, b) => b.price - a.price);
+  if (sort === 'popularity') filtered.sort((a, b) => b.rating - a.rating);
+
+  document.getElementById('shopProducts').innerHTML = filtered.length ? filtered.map(renderProductCard).join('') : '<div class="col-span-full text-center py-20 opacity-60">No products found</div>';
+}
+
+function filterCategory(cat, btn) {
+  currentCategory = cat;
+  document.querySelectorAll('#categoryFilters .filter-chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  renderShopProducts();
+}
+
+function filterByPrice(val) {
+  maxPrice = parseInt(val);
+  document.getElementById('priceValue').textContent = `Rs. ${maxPrice.toLocaleString()}`;
+  renderShopProducts();
+}
+
+function sortProducts(val) {
+  renderShopProducts();
+}
+
+// ==================== PRODUCT DETAIL ====================
+function openProduct(id) {
+  currentProduct = products.find(p => p.id === id);
+  if (!currentProduct) return;
+  currentQty = 1;
+
+  document.getElementById('productMainImage').src = currentProduct.image;
+  document.getElementById('productBrand').textContent = currentProduct.brand === 'poeticblue' ? 'POETICBLUEDESIGNS' : 'THEBASKETEDIT8';
+  document.getElementById('productName').textContent = currentProduct.name;
+  document.getElementById('productPrice').textContent = `Rs. ${currentProduct.price.toLocaleString()}`;
+  document.getElementById('productDescription').textContent = currentProduct.description;
+  document.getElementById('productMaterial').textContent = currentProduct.material;
+  document.getElementById('productDimensions').textContent = currentProduct.dimensions;
+  document.getElementById('productStock').textContent = currentProduct.stock > 0 ? `In Stock (${currentProduct.stock} available)` : 'Out of Stock';
+  document.getElementById('productQty').textContent = currentQty;
+
+  const stars = Array(5).fill(0).map((_, i) => `<i class="fas fa-star star ${i < currentProduct.rating ? '' : 'empty'}"></i>`).join('');
+  document.getElementById('productRating').innerHTML = stars;
+
+  // Thumbnails
+  document.getElementById('productThumbnails').innerHTML = [currentProduct.image, currentProduct.image, currentProduct.image, currentProduct.image].map((img, i) => `
+    <div class="gallery-thumb ${i === 0 ? 'active' : ''} aspect-square" onclick="changeMainImage('${img}', this)">
+      <img src="${img}" class="w-full h-full object-cover" />
+    </div>
+  `).join('');
+
+  // Basket customization
+  const basketDiv = document.getElementById('basketCustomization');
+  if (currentProduct.isBasket) {
+    basketDiv.classList.remove('hidden');
+  } else {
+    basketDiv.classList.add('hidden');
+  }
+
+  // Wishlist icon
+  const isWished = wishlist.includes(id);
+  document.getElementById('wishlistIcon').className = isWished ? 'fas fa-heart text-[#D9909F]' : 'far fa-heart';
+
+  // Similar products
+  const similar = products.filter(p => p.id !== id && (p.brand === currentProduct.brand || p.category === currentProduct.category)).slice(0, 4);
+  document.getElementById('similarProducts').innerHTML = similar.map(renderProductCard).join('');
+
+  navigate('product');
+}
+
+function changeMainImage(src, el) {
+  document.getElementById('productMainImage').src = src;
+  document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+}
+
+function changeQty(delta) {
+  currentQty = Math.max(1, Math.min(currentQty + delta, currentProduct.stock));
+  document.getElementById('productQty').textContent = currentQty;
+}
+
+function updateBasketPrice() {
+  if (!currentProduct) return;
+  let extras = 0;
+  document.querySelectorAll('.basket-item:checked').forEach(cb => {
+    extras += parseInt(cb.dataset.price);
+  });
+  const total = currentProduct.price + extras;
+  document.getElementById('productPrice').textContent = `Rs. ${total.toLocaleString()}`;
+}
+
+function addToCartFromProduct() {
+  if (!currentProduct) return;
+  let extras = 0;
+  document.querySelectorAll('.basket-item:checked').forEach(cb => {
+    extras += parseInt(cb.dataset.price);
+  });
+  addToCart(currentProduct.id, currentQty, extras);
+}
+
+function buyNow() {
+  addToCartFromProduct();
+  navigate('checkout');
+}
+
+function toggleWishlist() {
+  if (!currentProduct) return;
+  const idx = wishlist.indexOf(currentProduct.id);
+  if (idx > -1) {
+    wishlist.splice(idx, 1);
+    document.getElementById('wishlistIcon').className = 'far fa-heart';
+    showToast('Removed from wishlist');
+  } else {
+    wishlist.push(currentProduct.id);
+    document.getElementById('wishlistIcon').className = 'fas fa-heart text-[#D9909F]';
+    showToast('Added to wishlist');
+  }
+  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+}
+
+// ==================== CART ====================
+function addToCart(id, qty = 1, extras = 0) {
+  const existing = cart.find(c => c.id === id);
+  if (existing) {
+    existing.qty += qty;
+  } else {
+    cart.push({ id, qty, extras });
+  }
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateCartCount();
+  showToast('Added to cart!');
+}
+
+function quickAdd(id) {
+  addToCart(id, 1, 0);
+}
+
+function updateCartCount() {
+  const count = cart.reduce((sum, item) => sum + item.qty, 0);
+  document.getElementById('cartCount').textContent = count;
+}
+
+function renderCart() {
+  const container = document.getElementById('cartItems');
+  const empty = document.getElementById('emptyCart');
+
+  if (cart.length === 0) {
+    container.innerHTML = '';
+    empty.classList.remove('hidden');
+    document.getElementById('cartSubtotal').textContent = 'Rs. 0';
+    document.getElementById('cartTotal').textContent = 'Rs. 0';
+    return;
+  }
+
+  empty.classList.add('hidden');
+  let subtotal = 0;
+
+  container.innerHTML = cart.map(item => {
+    const product = products.find(p => p.id === item.id);
+    if (!product) return '';
+    const total = (product.price + (item.extras || 0)) * item.qty;
+    subtotal += total;
+    return `
+      <div class="bg-white rounded-2xl p-4 flex gap-4 items-center">
+        <img src="${product.image}" class="w-24 h-24 rounded-xl object-cover" />
+        <div class="flex-1">
+          <div class="text-xs tracking-widest text-[#C9A961] mb-1">${product.brand === 'poeticblue' ? 'POETICBLUEDESIGNS' : 'THEBASKETEDIT8'}</div>
+          <h3 class="font-display font-bold">${product.name}</h3>
+          <div class="text-sm opacity-70">Rs. ${product.price.toLocaleString()} ${item.extras ? '+ Rs. ' + item.extras : ''}</div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="qty-btn" onclick="updateCartQty(${item.id}, -1)"><i class="fas fa-minus text-xs"></i></button>
+          <span class="font-bold w-8 text-center">${item.qty}</span>
+          <button class="qty-btn" onclick="updateCartQty(${item.id}, 1)"><i class="fas fa-plus text-xs"></i></button>
+        </div>
+        <div class="font-bold w-28 text-right">Rs. ${total.toLocaleString()}</div>
+        <button onclick="removeFromCart(${item.id})" class="text-red-500 hover:text-red-700"><i class="fas fa-trash"></i></button>
+      </div>
+    `;
+  }).join('');
+
+  document.getElementById('cartSubtotal').textContent = `Rs. ${subtotal.toLocaleString()}`;
+  document.getElementById('cartTotal').textContent = `Rs. ${(subtotal + 300).toLocaleString()}`;
+}
+
+function updateCartQty(id, delta) {
+  const item = cart.find(c => c.id === id);
+  if (!item) return;
+  item.qty = Math.max(1, item.qty + delta);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
+  updateCartCount();
+}
+
+function removeFromCart(id) {
+  cart = cart.filter(c => c.id !== id);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
+  updateCartCount();
+  showToast('Removed from cart');
+}
+
+function renderCheckout() {
+  let subtotal = 0;
+  document.getElementById('checkoutItems').innerHTML = cart.map(item => {
+    const product = products.find(p => p.id === item.id);
+    if (!product) return '';
+    const total = (product.price + (item.extras || 0)) * item.qty;
+    subtotal += total;
+    return `
+      <div class="flex gap-3 items-center">
+        <img src="${product.image}" class="w-14 h-14 rounded-lg object-cover" />
+        <div class="flex-1">
+          <div class="font-semibold text-sm">${product.name}</div>
+          <div class="text-xs opacity-70">Qty: ${item.qty}</div>
+        </div>
+        <div class="font-bold text-sm">Rs. ${total.toLocaleString()}</div>
+      </div>
+    `;
+  }).join('');
+  document.getElementById('checkoutSubtotal').textContent = `Rs. ${subtotal.toLocaleString()}`;
+  document.getElementById('checkoutTotal').textContent = `Rs. ${(subtotal + 300).toLocaleString()}`;
+}
+
+function placeOrder() {
+  if (cart.length === 0) {
+    showToast('Your cart is empty');
+    return;
+  }
+  cart = [];
+  localStorage.setItem('cart', JSON.stringify(cart));
+  updateCartCount();
+  showToast('Order placed successfully! ');
+  setTimeout(() => navigate('account'), 1500);
+}
+
+// ==================== ACCOUNT ====================
+function showAccountTab(tab) {
+  document.querySelectorAll('.account-content').forEach(c => c.classList.add('hidden'));
+  document.getElementById(`tab-${tab}`).classList.remove('hidden');
+  document.querySelectorAll('.account-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.account-tab[data-tab="${tab}"]`).classList.add('active');
+}
+
+function renderWishlistTab() {
+  const container = document.getElementById('wishlistItems');
+  if (wishlist.length === 0) {
+    container.innerHTML = '<div class="col-span-full text-center py-10 opacity-60">Your wishlist is empty</div>';
+    return;
+  }
+  const items = products.filter(p => wishlist.includes(p.id));
+  container.innerHTML = items.map(p => `
+    <div class="border rounded-xl p-4 flex gap-3 items-center">
+      <img src="${p.image}" class="w-20 h-20 rounded-lg object-cover cursor-pointer" onclick="openProduct(${p.id})" />
+      <div class="flex-1">
+        <div class="font-bold">${p.name}</div>
+        <div class="text-sm opacity-70">Rs. ${p.price.toLocaleString()}</div>
+        <button onclick="quickAdd(${p.id})" class="btn-royal text-xs py-1 px-3 mt-2">Add to Cart</button>
+      </div>
+      <button onclick="toggleWishlistItem(${p.id})" class="text-[#D9909F]"><i class="fas fa-heart"></i></button>
+    </div>
+  `).join('');
+}
+
+function toggleWishlistItem(id) {
+  const idx = wishlist.indexOf(id);
+  if (idx > -1) {
+    wishlist.splice(idx, 1);
+    showToast('Removed from wishlist');
+  }
+  localStorage.setItem('wishlist', JSON.stringify(wishlist));
+  renderWishlistTab();
+}
+
+// ==================== ADMIN ====================
+function showAdminTab(tab) {
+  document.querySelectorAll('.admin-content').forEach(c => c.classList.add('hidden'));
+  document.getElementById(`admin-${tab}`).classList.remove('hidden');
+  document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.admin-tab[data-tab="${tab}"]`).classList.add('active');
+}
+
+// ==================== UI TOGGLES ====================
+function toggleDark() {
+  currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+  document.body.classList.toggle('dark');
+  document.getElementById('themeIcon').className = currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+}
+
+function toggleLang() {
+  currentLang = currentLang === 'en' ? 'ur' : 'en';
+  document.getElementById('langLabel').textContent = currentLang.toUpperCase();
+  document.body.setAttribute('dir', currentLang === 'ur' ? 'rtl' : 'ltr');
+  showToast(currentLang === 'ur' ? 'اردو زبان منتخب کی گئی' : 'Language: English');
+}
+
+function toggleSearch() {
+  const bar = document.getElementById('searchBar');
+  bar.classList.toggle('hidden');
+  if (!bar.classList.contains('hidden')) {
+    document.getElementById('searchInput').focus();
+  }
+}
+
+function toggleMobileMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+function handleSearch(query) {
+  const results = document.getElementById('searchResults');
+  if (!query) { results.innerHTML = ''; return; }
+  const filtered = products.filter(p => p.name.toLowerCase().includes(query.toLowerCase()));
+  results.innerHTML = filtered.length ? filtered.map(p => `
+    <div class="flex gap-3 p-3 hover:bg-gray-50 rounded-lg cursor-pointer" onclick="openProduct(${p.id}); toggleSearch();">
+      <img src="${p.image}" class="w-14 h-14 rounded-lg object-cover" />
+      <div class="flex-1">
+        <div class="font-semibold">${p.name}</div>
+        <div class="text-sm opacity-70">Rs. ${p.price.toLocaleString()}</div>
+      </div>
+    </div>
+  `).join('') : '<div class="p-4 text-center opacity-60">No products found</div>';
+}
+
+function handleNewsletter(e) {
+  e.preventDefault();
+  showToast('Thank you for subscribing! 💌');
+  e.target.reset();
+}
+
+function handleContact(e) {
+  e.preventDefault();
+  showToast('Message sent successfully! We\'ll get back to you soon.');
+  e.target.reset();
+}
+
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  toast.classList.add('show');
+  setTimeout(() => toast.classList.remove('show'), 3000);
+}
+
+// ==================== INIT ====================
+renderFeaturedProducts();
+updateCartCount();
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    nav.classList.add('shadow-md');
+  } else {
+    nav.classList.remove('shadow-md');
+  }
+});
+
+// Intersection observer for animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate-fadeInUp');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.product-card, .category-card').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
+
